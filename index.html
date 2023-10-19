@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Music Player</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-dark.css">
+    <script src="https://kit.fontawesome.com/f858880a6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="toggle-mode" class="fa-solid fa-toggle-off fa-2xl"></button>
+    <button id="info" class="fa-solid fa-circle-info fa-2xl" onclick="document.getElementById('id01').style.display='block'"></button>
+     <div id="id01" class="modal">
+
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h2>Welcome to MoodSounds </h2><h2>- Your Mood-Enhancing Music Experience</h2>
+      </div>
+
+      <div class="container">
+        <p class="popup-text">
+        Experience music like never before with MoodSounds. Our single-page music player simplifies your musical journey, offering curated playlists and customizable themes for the ultimate listening experience.</p>
+        <p class="popup-text"><strong>Discover Your Mood:</strong></p>
+        <p class="popup-text">
+Choose from MoodyMix, MelodyMix, Classical, or Hip-Hop playlists to match your mood.
+        </p>
+        <p class="popup-text"><strong>Seamless Themes:</strong></p>
+        <p class="popup-text">
+Toggle between Dark and Light modes for a visually pleasing experience, day or night.</p>
+<p class="popup-text"><strong>Key Features:</strong>
+<ul>
+    <li class="popup-text">
+Streamlined design for a distraction-free experience.</li>
+<li class="popup-text">
+Dive into handpicked playlists spanning genres and moods.</li>
+<li class="popup-text">
+Cross-platform compatibility, accessible on any device.</li>
+</ul></p>
+<p class="popup-text">Let MoodSounds be your guide to musical exploration. Join us today and let the power of sound elevate your mood.</p>
+  
+      </div>
+      <div class="container">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+        <h1>MoodSounds</h1>
+        <h3>Your Mood-Enhancing Music Experience</h3>
+    </div>
+    <div id="categories" class="category">
+        <button id="melody-mix" class="active">MelodyMix</button>
+        <button id="hip-hop" class="">HipHop</button>
+        <button id="classical" class="">Classical</button>
+        <button id="moody-mix" class="">MoodyMix</button>
+    </div>
+    <div class="music-player">
+        <h1 id="music-title">MelodyMix</h1>
+        <div>
+            <h3 class="song-name">Undipova</h3>
+        </div>
+        <div class="player-controls">
+            <audio id="audio" src="song.mp3"></audio>
+            <div class="play">
+                <div id="prev" class="fa-solid fa-lg fa-backward-step"></div>
+                <button id="play-pause" class="fa-solid fa-2xl fa-circle-play"></button>
+                <div id="next" class="fa-solid fa-lg fa-forward-step"></div>
+            </div>
+            <div class="volume-container">
+                <div id="volume-icon" class="fa-solid fa-volume-high"></div>
+                <input id="volume" type="range" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+        <div class="progress">
+            <div class="time-before">0:00</div>
+            <div class="progress-container">
+                <div id="progress-bar"></div>  
+            </div>
+            <div class="time-after">0:00</div>
+        </div>
+    </div>
+   <!--  <div class="waveform-container">
+        <canvas id="waveform" width="500" height="100"></canvas>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>

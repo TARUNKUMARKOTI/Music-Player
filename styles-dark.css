@@ -1,0 +1,57 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333333;
+    color: #fff;
+}
+
+body.dark-mode .content {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/*body.dark-mode #toggle-mode{
+    background-color: #fff;
+}*/
+
+body.dark-mode .music-player{
+    background-color: #000;
+}
+body.dark-mode .play{
+    background-color: #000;
+}
+
+body.dark-mode #play-pause{
+    background-color: #000;
+}
+
+body.dark-mode #categories button{
+    background-color: #333333;
+}
+
+
+body.dark-mode .modal-content{
+    background-color: #000;
+    border: 1px solid #888;
+}
+body.dark-mode .close{
+    color: #fff;
+}
+
+body.dark-mode h2{
+    color: #fff;
+}
+body.dark-mode .popup-text{
+    color: #fff;
+}
+
+body.dark-mode .close:hover,
+body.dark-mode .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+body.dark-mode h1,body.dark-mode h3{
+
+    color: #fff;
+}
